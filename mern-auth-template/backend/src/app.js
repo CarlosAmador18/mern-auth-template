@@ -39,12 +39,10 @@ async function main() {
   try {
     await connectDB(); // Conectar a la DB primero
     app.listen(PORT, () => {
-      console.log(`>>> Server is running on port ${PORT}`);
-      console.log(`>>> Accepting requests from: ${FRONTEND_URL}`)
+
     });
   } catch (error) {
-    console.error("Failed to start server:", error);
-  }
+   
 }
 
 main(); 
